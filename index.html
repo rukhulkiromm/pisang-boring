@@ -9,10 +9,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -29,26 +26,62 @@
         <a href="#home">Home</a>
         <a href="#about">Tentang Kami</a>
         <a href="#menu">Menu</a>
+        <a href="#products">Produk</a>
         <a href="#contact">Kontak</a>
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
+
+      <!-- Search form start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search form end -->
+
+      <!-- Shopping Cart Start -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/products/1.jpg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Pisang Kepok</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/products/1.jpg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Pisang Kepok</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/products/1.jpg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Pisang Kepok</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+      </div>
+      <!-- Shopping Cart End -->
     </nav>
     <!-- Navbar end -->
 
     <!-- Hero Section start -->
     <section class="hero" id="home">
       <main class="content">
-        <h1>Lagi Boring <span>Pisangin</span> Ajaa</h1>
+        <h1>Lagi Boring <span>Pisangin</span> <span>Ajaa</span></h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam,
-          reprehenderit.
+          Apakah anda mencari sensasi manis yang renyah? Kami menghadirkan pisang goreng yang akan merubah cara anda menikmati camilan. Dengan kombinasi sempurna antara manis pisang yang matang dan tekstur renyah kulitnya, kami menghadirkan
+          kelezatan yang tak terlupakan
         </p>
-        <a href="#" class="cta">Beli Sekarang</a>
       </main>
     </section>
     <!-- Hero Section end -->
@@ -64,13 +97,12 @@
         <div class="content">
           <h3>Kenapa memilih pisang kami?</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex
-            repellendus beatae totam aut soluta quis.
+            Kami menggunakan pisang segar pilihan yang diolah dengan hati-hati dan dilapisi dengan adonan yang lembut. Setiap pisang goreng yang kami sajikan adalah karya seni kuliner yang dipanggang hingga kecokelatan sempurna. Ditambah
+            lagi, kami menawarkan berbagai pilihan toping yang akan menambah kelezatan dan keunikan bagi pengalaman makan anda
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam unde
-            placeat pariatur dolorum, explicabo iste. A molestiae nesciunt eius
-            laudantium?
+            Sekarang, bayangkan memasukkan pisang goreng hangat ke dalam mulut Anda, sambil merasakan aromanya yang menggoda dan menikmati kenikmatan melelehnya gula di dalam mulut. Inilah pisang goreng yang kami hadirkan, menghadirkan
+            kebaha.giaan dalam setiap gigitannya
           </p>
         </div>
       </div>
@@ -80,43 +112,115 @@
     <!-- Menu Section start -->
     <section id="menu" class="menu">
       <h2><span>Menu</span> Kami</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque provident
-        voluptates, architecto dolores suscipit.
-      </p>
+      <p>Kami dengan bangga mempersembahkan kepada Anda menu makanan yang luar biasa, diisi dengan pilihan-pilihan yang menggugah selera dan menciptakan pengalaman kuliner yang tak terlupakan.</p>
 
       <div class="row">
         <div class="menu-card">
-          <img src="img/menu/1.jpg" alt="Coklat" class="menu-card-img" />
-          <h3 class="menu-card-title">- Coklat -</h3>
+          <img src="img/menu/coklatkeju.jpg" alt="Coklat Keju" class="menu-card-img" />
+          <h3 class="menu-card-title">- Pisang Coklat Keju -</h3>
           <p class="menu-card-prize">IDR 15k</p>
         </div>
         <div class="menu-card">
-          <img src="img/menu/1.jpg" alt="Coklat" class="menu-card-img" />
-          <h3 class="menu-card-title">- Coklat -</h3>
+          <img src="img/menu/greentea.jpg" alt="GreenTea" class="menu-card-img" />
+          <h3 class="menu-card-title">- Pisang Green Tea -</h3>
           <p class="menu-card-prize">IDR 15k</p>
         </div>
         <div class="menu-card">
-          <img src="img/menu/1.jpg" alt="Coklat" class="menu-card-img" />
-          <h3 class="menu-card-title">- Coklat -</h3>
+          <img src="img/menu/tiramisu.jpg" alt="Tiramisu" class="menu-card-img" />
+          <h3 class="menu-card-title">- Pisang Tiramisu -</h3>
           <p class="menu-card-prize">IDR 15k</p>
         </div>
         <div class="menu-card">
-          <img src="img/menu/1.jpg" alt="Coklat" class="menu-card-img" />
-          <h3 class="menu-card-title">- Coklat -</h3>
-          <p class="menu-card-prize">IDR 15k</p>
+          <img src="img/menu/oreo.jpg" alt="Oreo" class="menu-card-img" />
+          <h3 class="menu-card-title">- Pisang Oreo -</h3>
+          <p class="menu-card-prize">IDR 13k</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/coklat.jpg" alt="Coklat" class="menu-card-img" />
+          <h3 class="menu-card-title">- Pisang Coklat -</h3>
+          <p class="menu-card-prize">IDR 13k</p>
         </div>
       </div>
     </section>
     <!-- Menu Section end -->
 
+    <!-- Product Section Start -->
+    <section id="products" class="products">
+      <h2><span>Produk Unggulan</span> Kami</h2>
+      <p>
+        Dengan kulit kuning cerah yang memancarkan keindahan tropis, pisang ini menawarkan cita rasa yang menggugah selera dan kaya nutrisi. Buka rahasia kelezatan sejati dengan daging pisang yang lembut, manis, lezat. Tiap gigitan adalah
+        sebuah petualangan eksotis yang memanjakan lidah dan menenangkan jiwa.
+      </p>
+
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/products/1.jpg" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Pisang Kepok</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 50K</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/products/1.jpg" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Pisang Kepok</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 50K</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/products/1.jpg" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Pisang Kepok</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 50K</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product Section End -->
+
     <!-- Contact Section start -->
     <section id="contact" class="contact">
       <h2><span>Kontak</span> Kami</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-        repudiandae.
-      </p>
+      <p>Segera hubungi kami dan saksikan bagaimana hidangan kami menyentuh jiwa Anda dan memuaskan selera Anda. Kami siap membawa Anda dalam perjalanan rasa yang tak terlupakan. Selamat datang di dunia makanan yang mempesona!</p>
 
       <div class="row">
         <iframe
@@ -166,6 +270,33 @@
       </div>
     </footer>
     <!-- Footer end -->
+
+    <!-- Modal Box Item Detail Start -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/products/1.jpg" alt="Product 1" />
+          <div class="product-content">
+            <h3>Pisang Kepok</h3>
+            <p>
+              Pisang Kepok adalah varietas pisang yang populer dan serbaguna di Indonesia. Dengan rasa manis dan tekstur lembutnya, pisang kepok cocok untuk dinikmati dalam berbagai hidangan dan merupakan pilihan yang sehat dan lezat untuk
+              camilan sehari-hari
+            </p>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30K</div>
+            <a href="#"><i data-feather="shopping-cart"></i> <span>add to cart</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Box Item Detail End -->
 
     <!-- Feather Icons -->
     <script>
